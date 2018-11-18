@@ -1,6 +1,6 @@
 FROM php:7.2-apache
 
-COPY ../config/sources.list /etc/apt/sources.list
+COPY sources.list /etc/apt/sources.list
 
 RUN apt-get -y update --fix-missing
 RUN apt-get upgrade -y
